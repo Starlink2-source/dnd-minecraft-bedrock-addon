@@ -1,0 +1,19 @@
+# --- Bridge v2 Specifics ---
+# This folder contains bridge's internal cache and local state
+.bridge/
+# This is where bridge puts the compiled files (you only need the source)
+builds/
+
+# --- Editor & System Junk ---
+# Visual Studio Code settings
+.vscode/
+# Mac system files
+.DS_Store
+# Windows thumbnail cache
+Thumbs.db
+# Log files
+*.log
+
+# --- Optional (if you use scripts) ---
+node_modules/
+projects.json
