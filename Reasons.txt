@@ -1,0 +1,1 @@
+I could not use Git for Minecraft Bedrock addons that I made, so I stored seperate versions of addons in this folder. 
