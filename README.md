@@ -1,59 +1,63 @@
-#  Dungeons & Dragons: Wood Elf Add-on
+# D&D Add-on
 
-![Version](https://img.shields.io/badge/Version-v0.0.1_Alpha-green) ![Bedrock](https://img.shields.io/badge/Platform-Bedrock_Edition-blue)
+![Version](https://img.shields.io/badge/Version-v0.1.0-blue) ![Bedrock](https://img.shields.io/badge/Minecraft-1.21.130-green) ![Platform](https://img.shields.io/badge/Platform-Bedrock_Edition-blue)
 
-**Welcome to the official repository for the D&D Wood Elf Add-on!** This project brings the fantasy world of Dungeons & Dragons to Minecraft Bedrock Edition, starting with the elusive and deadly Wood Elf.
-
----
-
-##  Features
-
-###  New Entity: The Wood Elf
-A fully custom-modeled entity that spawns in your world.
-* **Health:** 20 (Matches Player Health)
-* **Behavior:** Neutral/Defensive. Will fight monsters to protect the area.
-* **Combat:** specialized **Archer AI**. Keeps distance and uses a custom modeled bow.
-
-###  Custom Animations
-Fluid movements created in Blockbench to bring the Elf to life:
-* **Idle:** Breathing and looking around.
-* **Walk:** Natural movement when patrolling.
-* **Attack:** Draws bow and fires arrows.
-* **Death:** Dramatic collapse animation.
-
-###  Loot Table
-Defeating a Wood Elf (or trading, coming in v0.2) yields special rewards:
-* **Elven Bread & More!** 
-* *More items coming in future updates...*
+**Welcome to the V0.1.0 release of the D&D Add-on!** This project brings the fantasy world of Dungeons & Dragons to Minecraft Bedrock Edition, featuring custom entities, specialized equipment, and advanced animations.
 
 ---
 
-##  Installation Guide
+## Features
 
-1.  Go to the **[Releases]** tab on the right side of this page.
-2.  Download the latest `.mcaddon` file (e.g., `Wood_Elf_v0.0.1.mcaddon`).
-3.  **Double-click** the file to open Minecraft.
-4.  The game will automatically import the **Behavior Pack** and **Resource Pack**.
-5.  Create a new world (or edit an existing one) and activate both packs in the settings!
+### New Entity: The Wood Elf
+A high-fidelity custom entity with specialized Archer AI.
+* **Health:** 20 HP.
+* **Behavior:** Defensive/Neutral. Will actively hunt monsters (Zombies, Skeletons, etc.) within a 16-block radius.
+* **Combat:** Uses a custom-modeled bow. Keeps distance from targets to fire arrows.
+* **Animations:** Fully scripted transitions for **Idle, Walk, Attack (Bow Draw), Hurt, and Death**.
 
-> **Note:** Ensure "Experimental Gameplay" is enabled if you are using advanced features, though this version is designed to work with standard settings.
+### New Gear: Bark Armor Set
+The first of many forest-themed equipment sets.
+* **Includes:** Bark Helmet, Chestplate, Leggings, and Boots.
+* **Optimized Rendering:** Uses custom Molang scripts to prevent leg-to-chest texture stretching.
+
+### New Item: Elven Leaf Bread
+A unique food source dropped by Wood Elves.
+* **Texture:** Custom leaf-wrapped bread model.
+* **Usage:** Essential survival food for forest travelers.
 
 ---
 
-##  For Developers / Source Code
+## V0.1.0 Technical Fixes
+* **Schema 1.21.130:** All entity and item components updated to the latest Bedrock standards.
+* **Animation Priority:** Death and Attack animations now correctly override vanilla behaviors using a prioritized State Machine.
+* **Armor Components:** Migrated from deprecated `minecraft:armor` to the modern `minecraft:wearable` and `minecraft:protection` system.
+* **Flattened Structure:** Optimized file paths to resolve "Missing Texture" (checkerboard) and "Sliding Animation" bugs.
 
-This repository contains the raw source code compatible with **bridge. v2**.
+---
 
-### Folder Structure
-* `BP/` - Behavior Pack (Logic, Loot Tables, Entities)
-* `RP/` - Resource Pack (Textures, Models, Animations, Sounds)
-* `Skin Pack/` - Bonus custom skins.
+## Installation Guide
 
-### Compiling
-To build this project yourself:
-1.  Clone this repository.
-2.  Open the folder in **bridge. v2**.
-3.  Press **Export** to generate the `.mcaddon`.
+1. Navigate to the **[Releases]** tab.
+2. Download `D&D_Mod_V0.1.0.mcaddon`.
+3. **Double-click** the file to launch Minecraft and begin the auto-import.
+4. In your World Settings, activate both the **Resource Pack** and **Behavior Pack**.
+
+> **Note:** For the best experience, ensure the Resource Pack is active and placed at the top of your stack.
+
+---
+
+## For Developers (bridge. v2)
+
+This project is fully compatible with **bridge. v2**.
+
+### Directory Layout
+* `BP/` - Behavior Pack (Logic, Loot Tables, Entity Definitions).
+* `RP/` - Resource Pack (Textures, Geometry, Animations, Render Controllers).
+
+### Building from Source
+1. Clone the repository.
+2. Open the project in **bridge. v2**.
+3. Use the **Export** function to generate a fresh `.mcaddon`.
 
 ---
 
