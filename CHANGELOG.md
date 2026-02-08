@@ -1,26 +1,71 @@
-#  Changelog
+# Changelog
+## Version 0.1.0
+### Added:
+* Manifest Description Update Now Shows Version For Convenience
+* Manifest Description Update Now Adds Unicode Escape Sequences For Formatting
+### Fixed:
+* Missing Elven Leaf Bread Texture
+* Animation Controllers
+* Entity Rendering
+---------------------------------------------------------------
 
-All notable changes to the **Dungeons & Dragons: Wood Elf Add-on** will be documented in this file.
+## Version 0.0.9
+### Fixed:
+* Armor invisibility
+* Item Misplacements
+* Entity Rendering
+* Elven Leaf Bread Effects
+---------------------------------------------------------------
 
----
+## Version 0.0.8 - HOTFIX
+### Fixed:
+* Pack import errors
+* Bark Armor Texture Issues
+* Item Misplacements
+* Attachables Code
+---------------------------------------------------------------
 
-## [0.0.1-alpha] - 2026-01-13
-###  Added
-- **Initial Release:** The "v0.0.1 Alpha" version.
-- **Wood Elf Entity:** Added the base Wood Elf mob with a custom 128x128 texture.
-- **Custom Model:** Low poly Blockbench geometry featuring an integrated Elven Bow.
-- **Archer AI:** Wood Elves now use a ranged attack behavior to fight monsters.
-- **Animations:** Included `idle`, `walk`, `attack`, and `death` animations.
-###  Fixed
-- Fixed texture mirroring issues on the 128x128 UV map.
-- Resolved an issue where the Elf wouldn't properly target Creepers.
+## Version 0.0.7
+### Fixed:
+* Cleaned up MAC OS (X) Bloating Metadata
+---------------------------------------------------------------
 
----
+## Version 0.0.6
+### Fixed:
+* Wood Elf animations
+* Cleaned up MAC OS (X) Bloating Metadata
+## Version 0.0.5
+### Fixed:
+#### Items:
+* Elven Leaf Bread misplacement error
+## Version 0.0.4
+### Fixed:
+#### Entities: 
+* Wood Elf Behaviors
+---------------------------------------------------------------
 
-## [Planned Features]
-- **Trading:** Elves will trade emeralds for rare D&D items.
-- **More Mobs:** Planning Orcs and Goblins for v0.1.0.
-- **Structures:** Small Elven campsites that spawn in forests.
+## Version 0.0.3
+### Fixed:
+#### Entities:
+* Missing Wood Elf animations
+#### Items:
+* Missing Elven Leaf Bread Texture
+* No effects for Elven Leaf Bread
+### Added:
+* Crafting Recipies for Wood Elf spawn egg and Elven Leaf Bread
+---------------------------------------------------------------
 
----
-*Follow the project on GitHub for future updates!*
+## Version 0.0.2 - NOT PUBLIC
+### Fixed:
+#### Entities:
+* Wood Elf texture glitch
+#### Items:
+* Missing Elven Leaf Bread texture
+---------------------------------------------------------------
+
+## Version 0.0.1 - PUBLIC RELEASE
+### Added:
+#### Entities:
+* Wood Elf
+#### Items
+* Elven Leaf Bread
